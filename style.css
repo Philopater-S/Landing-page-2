@@ -1,0 +1,533 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    background-color:white ;
+    overflow-x: hidden;
+}
+
+/*---------mobile first section----------*/
+.first {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first .descripe {
+    max-width: 800px;
+    text-align: center;
+}
+
+.descripe picture img {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.descripe h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(210, 10%, 33%);
+}
+
+.descripe p {
+    font-size: 18px;
+    max-width: 650px;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.descripe .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.descripe .buttons a {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(171, 66%, 44%);
+    width: 200px;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.descripe .buttons a:hover {
+    background-color: hsl(171, 48%, 59%);
+}
+
+.descripe .buttons .button2 {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.descripe .buttons .button2:hover {
+    background-color: hsl(233, 92%, 75%);
+}
+
+/*---------mobile first section----------*/
+@media (max-width:430px) {
+    .first {
+        flex-direction: column;
+        padding: 0 35px;
+    }
+
+    .descripe h1 {
+        font-size: 30px;
+    }
+
+    .descripe p {
+        font-size: 17px;
+    }
+
+    .descripe .buttons a {
+        width: 100%;
+    }
+
+    .descripe .button1 {
+        margin-bottom: 15px;
+    }
+}
+
+/*---------mobile first section----------*/
+/*---------first section----------*/
+/*---------Secound section----------*/
+.two {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.two .title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.two .title h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(210, 10%, 33%);
+}
+
+.two .title p {
+    font-size: 18px;
+    max-width: 650px;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.two .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.two .content picture img {
+    width: 650px;
+}
+
+.two .content div {
+    padding: 15px 10px;
+    color: hsl(210, 10%, 33%);
+}
+
+.two .content div div p {
+    margin-top: 15px;
+    max-width: 350px;
+    line-height: 1.8;
+    color: hsl(201, 11%, 66%);
+    ;
+}
+
+/*---------mobile Secound section----------*/
+@media (max-width:430px) {
+    .two {
+        flex-direction: column;
+        height: auto;
+        padding: 0 35px;
+    }
+
+    .two .title h1 {
+        font-size: 30px;
+    }
+
+    .two .title p {
+        font-size: 17px;
+    }
+
+    .two .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two .content picture img {
+        width: 300px;
+    }
+
+    .two .content div div {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/*---------mobile Secound section----------*/
+/*---------larger Secound section----------*/
+@media (min-width:1601px) {
+    .two .content picture img {
+        width: 800px;
+    }
+
+    .two .content div {
+        padding: 25px 10px;
+        color: hsl(210, 10%, 33%);
+    }
+}
+
+/*---------larger Secound section----------*/
+/*---------Secound section----------*/
+/*---------Third section----------*/
+.third {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.third .title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.third .title h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(210, 10%, 33%);
+}
+
+.third .title p {
+    font-size: 18px;
+    max-width: 650px;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.third picture img {
+    transform: translateX(-50px);
+}
+
+/*---------mobile Third section----------*/
+@media (max-width:430px) {
+    .third {
+        margin-top: 50px;
+        flex-direction: column;
+        padding: 0 35px;
+    }
+
+    .third .title h1 {
+        font-size: 30px;
+    }
+
+    .third .title p {
+        font-size: 17px;
+    }
+
+    .third .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third .content div div {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .third picture img {
+        width: 400px;
+        transform: translateX(0px);
+    }
+}
+
+/*---------mobile Third section----------*/
+/*---------Third section----------*/
+/*---------section four----------*/
+.four {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.four .title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.four .title h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(210, 10%, 33%);
+}
+
+.four .title p {
+    font-size: 18px;
+    max-width: 650px;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.four .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.four .col {
+    max-width: 350px;
+    text-align: center;
+    height: 217px;
+    line-height: 1.8;
+}
+
+.four .col:first-child {
+    transform: translateY(-10px);
+}
+
+.four .col:nth-child(2) {
+    margin: 0 25px;
+}
+
+.four .col h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    color: hsl(210, 10%, 33%);
+}
+
+.four .col p {
+    font-size: 17px;
+    max-width: 650px;
+    color: hsl(201, 11%, 66%);
+}
+
+.four .logos picture {
+    margin: 0 40px;
+}
+
+/*---------mobile four section----------*/
+@media (max-width:430px) {
+    .four .title {
+        width: 100%;
+    }
+
+    .four .row {
+        flex-direction: column;
+        height: 750px;
+    }
+
+    .four .row .col {
+        width: 100%;
+    }
+
+    .four .logos picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 40px 0px;
+    }
+}
+
+/*---------mobile four section----------*/
+/*---------section four----------*/
+/*---------section five----------*/
+.five {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.five h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(210, 10%, 33%);
+}
+
+.five p {
+    font-size: 18px;
+    max-width: 650px;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.five .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.five .buttons a {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(171, 66%, 44%);
+    width: 200px;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.five .buttons a:hover {
+    background-color: hsl(171, 48%, 59%);
+}
+
+.five .buttons .button2 {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.five .buttons .button2:hover {
+    background-color: hsl(233, 92%, 75%);
+}
+
+/*---------mobile five section----------*/
+@media (max-width:430px) {
+    .five {
+        height: 60vh;
+        flex-direction: column;
+        padding: 0 35px;
+    }
+
+    .five h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .five p {
+        font-size: 17px;
+    }
+
+    .five .buttons a {
+        width: 100%;
+    }
+
+    .five .button1 {
+        margin-bottom: 15px;
+    }
+}
+
+/*---------mobile five section----------*/
+/*---------section five----------*/
+/*---------footer----------*/
+footer {
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 175px;
+    width: 100vw;
+    background-color: hsl(0, 17%, 95%);
+}
+
+footer picture img {
+    width: 70px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col a {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .col a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.social-icons picture:nth-child(2) {
+    margin: 0 25px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+/*---------mobile footer----------*/
+@media (max-width:430px) {
+    footer {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    footer picture img {
+        width: 70px;
+        margin-bottom: 25px;
+    }
+
+    .social-icons img {
+        margin-top: 20px;
+    }
+}
+
+/*---------mobile footer----------*/
